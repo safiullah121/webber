@@ -1,0 +1,367 @@
+.container{
+    max-height: 655px;
+    background-color: #A5F3FC1A;
+    border:1px #A5F3FC1A solid;
+}
+.navbar{
+  
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    max-height: 100px;
+}
+
+
+.signup{
+    padding-right: 50px;
+    padding-top:35px ;
+  
+}
+.signup button{
+    border: 1px #CFFAFE solid;
+    padding: 10px 15px;
+    background-color: #CFFAFE;
+    color: #0E7490;
+    margin-right: 10px;
+   
+}
+.webber{
+   
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.u-list{
+    
+}
+.u-list ul{
+    display: flex;
+    list-style: none;
+    padding-right: 20px;
+   
+}
+.u-list ul li{
+    padding-right: 20px;
+    padding-top: 25px;
+    font-family: sans-serif;
+
+   
+}
+.u-list ul li a{
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+}
+.u-list ul li a:hover{
+    color: #0E7490;
+}
+
+.m-portion{
+      
+      display: flex;
+      justify-content: center;
+}
+.m-portion h1{
+    text-align: center;
+    font-size: 60px;
+    padding-top: 50px;
+    font-family: sans-serif;
+}
+.m-btn{
+   
+    display: flex;
+    justify-content: center;
+}
+.m-btn button{
+    padding: 15px 30px;
+}
+.bt-1{
+    padding-right: 25px;
+    padding-bottom: 100px;
+}
+.bt-1  button{
+      
+      border:1px #0E7490 solid;
+    
+        background-color: #0E7490;
+}
+.bt-2 button{
+    border: 1px solid #CFFAFE;
+    background-color: #CFFAFE;
+}
+.main{
+    margin: auto;
+}
+.box{
+    max-width:1050px;
+    width: 100%;
+    margin: auto;
+    background-color: #0E7490;
+}
+.box h1{
+    color: #0E7490;
+    padding-bottom: 220px;
+}
+.frame{
+    display: flex;
+    justify-content: center;
+}
+.frame img{
+    max-width: 850px;
+   max-height: 600px;
+}
+.features{
+    
+    display: flex;
+    justify-content: center;
+}
+.features h1{
+    font-size: 55px;
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+.h-features{
+    
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.rabust{
+   
+    max-width: 300px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+.d-features{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.working{
+    display: flex;
+    justify-content: center;
+}
+.working h1{
+    font-size:55px ;
+    font-family: sans-serif;
+    padding-top: 50px;
+}
+.m-working{
+    
+    display: flex;
+}
+.signin{
+   
+    max-width: 420px;
+    width: 100%;
+    padding-left: 130px;
+    padding-top: 200px;
+}
+.signin h1{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.signin p{
+    line-height: 25px;
+}
+.signin button{
+    padding:16px 30px ;
+    border:1px #0284C7 solid;
+    color: #ffff ;
+    background-color: #0284C7;
+}
+.signin p{
+    font-family: sans-serif;
+}
+
+.frame-2{
+    
+    padding-left: 200px;
+    padding-top: 70px;
+}
+.president{
+       display: flex;
+       justify-content: center;
+       background-color: #0E7490;
+       margin-top: 200px;
+      
+}
+.im1{
+   
+    padding-top: 80px;
+    padding-right: 10px;
+}
+.im2{
+    
+    padding-top: 65px;
+    padding-right: 15px;
+}
+.para1{
+    
+    max-width: 200px;
+    padding-right:90px ;
+    padding-top: 80px;
+}
+.para1 p{
+    font-family: sans-serif;
+    line-height: 20px;
+    color: #ffff;
+}
+.para2{
+   
+    max-width: 500px;
+    padding-top: 50px;padding-bottom: 40px;
+}
+.para2 p{
+    font-family: sans-serif;
+    line-height: 30px;
+    color: #ffff;
+
+
+}
+.brands{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+.brands h1{
+    font-size: 55px;
+    font-family: sans-serif;
+}
+.brands-u{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.brands-l{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.micro{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.micro button{
+    padding: 20px 30px;
+    border: 1px rgb(213, 211, 211) solid;
+    background-color: #ffff;
+}
+.numbers{
+    border:1px #0E7490 solid;
+    background-color: #0284C7;
+    margin-top: 280px;
+    text-align: center;
+    max-width: 1440px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+  
+}
+.numbers h1{
+  font-size: 40px;
+ color: #ffff;
+ padding-top: 20px;
+}
+.numbers p{
+    color: #ffff;
+    padding-bottom: 140px;
+}
+.specs{
+  display: flex;
+    justify-content: center;
+    
+}
+.r-box{
+    border:1px #e1e0e0 solid;
+    border-radius: 15px;
+    margin-top: -100px;
+    max-width: 230px;
+    width: 100%;
+    height: 100%;
+    max-height: 220px;
+    text-align: center;
+    font-family: sans-serif;
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: #ffff;
+    
+    
+}
+.r-box h1{
+    font-size: 30px;
+    padding-top: 40px;
+}
+.r-box p{
+    padding-bottom: 40px;
+}
+.download{
+    display: flex;
+    
+    justify-content: center;
+}
+.d-heading{
+    text-align: center;
+    font-size: 30px;
+    font-family: sans-serif;
+    margin-top: 200px;
+}
+.d-button{
+    padding-top: 20px;
+}
+.d-button button{
+    padding: 15px 35px;
+    background-color: #0284C7;
+    border:1px #0284C7 solid;
+    color: #ffff;
+}
+.footer{
+    background-color:#F4F4F5;
+   
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    margin: 0%;
+    width: 100%;
+    max-width: 1440px;
+    margin-top: 150px;
+}
+.footer h1{
+    font-size: 17px;
+}
+.footer p{
+     line-height: 30px;
+}
+.youtube{
+    
+    padding-left: 60px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+.email{
+   
+    max-width: 400px;
+    width: 100%;
+    
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.support{
+   
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.company{
+   
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}

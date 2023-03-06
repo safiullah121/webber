@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    max-height: 1800px;
+    background-color: #A5F3FC1A;
+    border:1px #A5F3FC1A solid;
+}
+.navbar{
+  
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    max-height: 100px;
+}
+
+
+.signup{
+    padding-right: 50px;
+    padding-top:35px ;
+  
+}
+.signup button{
+    border: 1px #CFFAFE solid;
+    padding: 10px 15px;
+    background-color: #CFFAFE;
+    color: #0E7490;
+    margin-right: 10px;
+   
+}
+.webber{
+   
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.u-list ul{
+    display: flex;
+    list-style: none;
+    padding-right: 0px;
+   
+}
+.u-list ul li{
+    padding-right: 20px;
+    padding-top: 25px;
+    font-family: sans-serif;
+}
+.u-list ul li a{
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+}
+.u-list ul li a:hover{
+    color: #0E7490;
+}
+
+.p-heading{
+  
+    text-align: center;
+     font-family: sans-serif;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.p-heading h1{
+    font-size: 50px;
+    padding-bottom: 30px;
+    padding-top: 90px;
+    padding-right: 20px;
+}
+.period{
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+.period button{
+    border:1px #0E7490 solid;
+    padding: 10px 30px;
+    background-color: #0E7490;
+    color:#fff ;
+}
+#button-2{
+    border:1px #CFFAFE solid;
+    color: #0E7490;
+    background-color: #CFFAFE;
+}
+.r-price{
+    display: flex;
+    font-family: sans-serif;
+    justify-content: space-around;
+}
+.pro{
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+   
+}
+.pro img{
+    padding-top: 25px;
+     max-width: 15px;
+     padding-left: 60px;
+}
+.pro h1{
+    padding-top: 35px;
+    text-align: center;
+}
+.pro p{
+    padding-top: 25px;
+    text-align: center;
+}
+.pro button{
+    padding-right: 15px;
+}
+
+.inline{
+display: flex;
+}
+.inline p{
+     padding-top: 40px;
+     padding-left: 10px;
+}
+.inline h1{
+    padding-left: 15px;
+}
+.plan{
+     padding-top: 25px;
+     
+    
+}
+.plan button{
+    border: 1px #CFFAFE solid;
+   
+}
+#plan{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #CFFAFE;
+    color: #0E7490;
+}
+#plan-2{
+    padding:11px 17px ;
+    color: #fff;
+    background-color: #0E7490;
+    border: 1px #0E7490 solid;
+}
+#padd{
+    padding-top: 60px;
+}
+#back-c{
+    background-color: #fff;
+    border:1px #e3e6e6 solid;
+    padding-left: 40px;
+    margin-top: 60px;
+     height: 100%;
+     padding-bottom: 40px;
+     
+    
+}
+#back-c button{
+    border: 1px #0E7490 solid;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.limit p{
+    line-height: 40px;
+    padding-top: 162px;
+}
+.q-head{
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+    margin-top: 150px;
+    padding-top: 60px;
+}
+.questions{
+   
+    max-width: 580px;
+    width: 100%;
+    margin-top: 60px;
+    padding-left: 100px;
+    
+}
+.ques{
+   
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+    max-height: 80px;
+    padding: 30px 0px;
+}
+.m-questions{
+      display: flex;
+      background-color: #F4F4F5;
+      padding-bottom: 60px;
+      
+}
+.questions-2{
+   
+    max-width: 580px;
+    width: 100%;
+   margin-top: 60px;
+}
+.q-b-c{
+    background-color: #F4F4F5;
+}
+.footer{
+    background-color:#F4F4F5;
+   
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    margin: 0%;
+    width: 100%;
+    max-width: 1440px;
+    
+}
+.footer h1{
+    font-size: 17px;
+}
+.footer p{
+     line-height: 30px;
+}
+.youtube{
+    
+    padding-left: 60px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+.email{
+   
+    max-width: 400px;
+    width: 100%;
+    
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.support{
+   
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.company{
+   
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.results{
+    border:1px #0E7490 solid;
+     text-align: center;
+     font-family: sans-serif;
+    line-height: 20px;
+    background-color: #0E7490;
+    
+}
+.results h1{
+    font-size: 30px;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+.results p{
+    color: #fff;
+}
+.re-button{
+    padding-top:40px ;
+    padding-bottom: 50px;
+}
+.results button{
+    padding: 15px 35px;
+    background-color: #fff;
+    color: #0E7490;
+    border: 1px #fff solid;
+}

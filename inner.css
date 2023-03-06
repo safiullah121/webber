@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    max-height: 3100px;
+    background-color: #A5F3FC1A;
+    border:1px #A5F3FC1A solid;
+}
+.navbar{
+  
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    width: 100%;
+    max-height: 100px;
+}
+
+
+.signup{
+    padding-right: 50px;
+    padding-top:35px ;
+  
+}
+.signup button{
+    border: 1px #CFFAFE solid;
+    padding: 10px 15px;
+    background-color: #CFFAFE;
+    color: #0E7490;
+    margin-right: 10px;
+   
+}
+.webber{
+   
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.u-list ul{
+    display: flex;
+    list-style: none;
+    padding-left: 40px;
+   
+}
+.u-list ul li{
+    padding-right: 20px;
+    padding-top: 35px;
+    font-family:sans-serif;
+}
+.u-list ul li a{
+    text-decoration: none;
+    color: rgb(62, 62, 62);
+}
+.u-list ul li a:hover{
+    color: #0E7490;
+}
+
+.software{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.soft-1{
+   
+    max-width: 500px;
+    width: 100%;
+    margin-top: 100px;
+}
+.soft-1 p{
+   padding-top: 10px;
+}
+.soft-1 h1{
+    padding-top: 13px;
+}
+.para1{
+   display: flex;
+   line-height: 40px;
+ 
+}
+.para2{
+    display: flex;
+    line-height: 40px;
+    
+}
+#r-pad{
+    padding-right: 75px;
+    padding-top: 0px;
+}
+#r-padd{
+    padding-left: 62px;
+    padding-top: 0px;
+}
+.soft-2{
+    
+    max-width: 700px;
+    width: 100%;
+    margin-top: 120px;
+}
+.soft-3{
+    border: 1px #0E7490 solid;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px 30px;
+    background-color: #0E7490;
+    color: #fff;
+    margin-top: 40px;
+}
+.soft-3 h1{
+    padding-top:15px ;
+    padding-bottom: 15px;
+}
+.soft-3 p{
+    padding-bottom: 30px;
+}
+.soft-3 button{
+    padding: 10px 24px;
+}
+.software-2{
+    margin-top: 40px;
+}
+#btn1{
+    background-color: #fff;
+    border: 1px #fff solid;
+    color: #0E7490;
+}
+#btn2{
+    background-color: #0284C7;
+    border: 1px #fff solid;
+    color: #fff;
+}
+.milestones{
+    
+    max-width: 600px;
+    width: 100%;
+    font-family: sans-serif;
+}
+.milestones img{
+    max-width: 600px;
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.milestones p{
+     padding-left: 20px;
+     padding-top: 20px;
+}
+.milestones h4{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.more{
+    display: flex;
+    justify-content: space-around;
+    line-height: 25px;
+}
+.swiss{
+    font-family: sans-serif;
+    max-width: 180px;
+    width: 100%;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+.swiss img{
+    max-width: 190px;
+
+}
+.swiss button{
+    background-color:#F4F4F5;
+    border: 1px #F4F4F5 solid;
+}
+#btn-p{
+    margin-bottom: -4px;
+    margin-left: -4px;
+    
+}
+#b-c{
+    color: #0E7490;
+    text-decoration: underline;
+}
+h2{
+    padding-bottom: 20px;
+    padding-left: 55px;
+    padding-top: 40px;
+    font-family: sans-serif;
+}
+.m-div{
+    border: 1px  #dedede solid;
+    margin-top: 100px;
+    background-color:  #F4F4F5;
+   
+}
+.footer{
+    background-color:#F4F4F5;
+   
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    
+    width: 100%;
+    max-width: 1440px;
+    
+}
+.footer h1{
+    font-size: 17px;
+}
+.footer p{
+     line-height: 30px;
+}
+.youtube{
+    
+    padding-left: 60px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+.email{
+   
+    max-width: 400px;
+    width: 100%;
+    
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.support{
+   
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.company{
+   
+    padding-left: 60px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}

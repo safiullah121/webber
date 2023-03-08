@@ -3,6 +3,7 @@
     padding: 0px;
 }
 
+
 .container{
     max-height: 3100px;
     background-color: #A5F3FC1A;
@@ -15,12 +16,13 @@
     max-width: 1440px;
     width: 100%;
     max-height: 100px;
+    margin: 0 auto;
 }
 
 
 .signup{
-    padding-right: 50px;
-    padding-top:35px ;
+    padding-right: 80px;
+    padding-top:33px ;
   
 }
 .signup button{
@@ -29,12 +31,13 @@
     background-color: #CFFAFE;
     color: #0E7490;
     margin-right: 10px;
+    border-radius: 2px;
    
 }
 .webber{
    
-    padding-top: 20px;
-    padding-left: 50px;
+    padding-top: 30px;
+    padding-left: 80px;
 }
 
 .u-list ul{
@@ -44,8 +47,8 @@
    
 }
 .u-list ul li{
-    padding-right: 20px;
-    padding-top: 35px;
+    padding-right: 30px;
+    padding-top: 45px;
     font-family:sans-serif;
 }
 .u-list ul li a{
@@ -131,10 +134,14 @@
     color: #fff;
 }
 .milestones{
-    
+   
     max-width: 600px;
     width: 100%;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 .milestones img{
     max-width: 600px;
@@ -195,7 +202,7 @@ h2{
 }
 .footer{
     background-color:#F4F4F5;
-   
+   margin: 0 auto;
     display: flex;
     justify-content: space-around;
     font-family: sans-serif;

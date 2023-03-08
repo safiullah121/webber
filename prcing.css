@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+   
 }
 
 .container{
@@ -15,13 +16,14 @@
     max-width: 1440px;
     width: 100%;
     max-height: 100px;
+    margin: 0 auto
 }
 
 
 .signup{
-    padding-right: 50px;
-    padding-top:35px ;
-  
+    padding-right: 80px;
+    padding-top:33px ;
+    
 }
 .signup button{
     border: 1px #CFFAFE solid;
@@ -29,12 +31,13 @@
     background-color: #CFFAFE;
     color: #0E7490;
     margin-right: 10px;
-   
+    
+    cursor: pointer;
 }
 .webber{
    
-    padding-top: 20px;
-    padding-left: 50px;
+    padding-top: 30px;
+    padding-left: 80px;
 }
 
 .u-list ul{
@@ -44,8 +47,8 @@
    
 }
 .u-list ul li{
-    padding-right: 20px;
-    padding-top: 25px;
+    padding-right: 30px;
+    padding-top: 45px;
     font-family: sans-serif;
 }
 .u-list ul li a{
@@ -66,9 +69,9 @@
      justify-content: center;
 }
 .p-heading h1{
-    font-size: 50px;
-    padding-bottom: 30px;
-    padding-top: 90px;
+    font-size: 96px;
+    padding-bottom: 13px;
+    margin-top: 200px;
     padding-right: 20px;
 }
 .period{
@@ -80,18 +83,26 @@
 .period button{
     border:1px #0E7490 solid;
     padding: 10px 30px;
-    background-color: #0E7490;
+    cursor: pointer;
     color:#fff ;
+    border-radius: 2px;
 }
 #button-2{
     border:1px #CFFAFE solid;
     color: #0E7490;
     background-color: #CFFAFE;
+    border-radius: 2px;
+    cursor: pointer;
+}
+#button-3{
+    background: linear-gradient(274.03deg, #06B6D4 0%, #0E7490 0.01%, #0284C7 100%);
+    cursor: pointer;
 }
 .r-price{
     display: flex;
     font-family: sans-serif;
     justify-content: space-around;
+    margin-top: 80px;
 }
 .pro{
     display: flex;
@@ -114,6 +125,7 @@
 }
 .pro button{
     padding-right: 15px;
+    cursor: pointer;
 }
 
 .inline{
@@ -133,28 +145,30 @@ display: flex;
 }
 .plan button{
     border: 1px #CFFAFE solid;
-   
+    cursor: pointer;
 }
 #plan{
-    padding: 10px 20px;
-    color: #fff;
+    padding: 15px 37px;
+   border: 1px #CFFAFE solid;
+   border-radius: 2px;
     background-color: #CFFAFE;
     color: #0E7490;
 }
 #plan-2{
-    padding:11px 17px ;
+    padding:15px 37px ;
     color: #fff;
-    background-color: #0E7490;
-    border: 1px #0E7490 solid;
+    cursor: pointer;
+    background: linear-gradient(274.03deg, #06B6D4 0%, #0E7490 0.01%, #0284C7 100%);
+   
 }
 #padd{
     padding-top: 60px;
 }
 #back-c{
     background-color: #fff;
-    border:1px #e3e6e6 solid;
+ 
     padding-left: 40px;
-    margin-top: 60px;
+    box-shadow: 20px 22px 24px rgba(23, 18, 63, 0.120028);
      height: 100%;
      padding-bottom: 40px;
      
@@ -164,7 +178,7 @@ display: flex;
     border: 1px #0E7490 solid;
     padding-left: 30px;
     padding-right: 30px;
-
+    cursor:help;
 }
 
 .limit p{
@@ -182,8 +196,9 @@ display: flex;
    
     max-width: 580px;
     width: 100%;
-    margin-top: 60px;
+    margin: 0 auto;
     padding-left: 100px;
+    
     
 }
 .ques{
@@ -198,24 +213,29 @@ display: flex;
       display: flex;
       background-color: #F4F4F5;
       padding-bottom: 60px;
-      
+      margin-top: 60px;
+    
 }
 .questions-2{
    
     max-width: 580px;
     width: 100%;
-   margin-top: 60px;
+    margin: 0 auto;
+   
 }
 .q-b-c{
     background-color: #F4F4F5;
 }
-.footer{
+.margin-4{
     background-color:#F4F4F5;
+}
+.footer{
+  margin:0 auto;
    
     display: flex;
     justify-content: space-around;
     font-family: sans-serif;
-    margin: 0%;
+    
     width: 100%;
     max-width: 1440px;
     
@@ -279,4 +299,6 @@ display: flex;
     background-color: #fff;
     color: #0E7490;
     border: 1px #fff solid;
+    border-radius: 2px;
+    cursor: pointer;
 }

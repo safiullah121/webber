@@ -6,7 +6,7 @@
 
 .container{
     max-height: 1800px;
-    background-color: #A5F3FC1A;
+    background:#A5F3FC1A ;
     border:1px #A5F3FC1A solid;
 }
 .navbar{
@@ -73,6 +73,14 @@
     padding-bottom: 13px;
     margin-top: 200px;
     padding-right: 20px;
+    font-weight: 900;
+    color: #1F2937;
+}
+#padd-2 h1{
+    background: linear-gradient(274.03deg, #06B6D4 0%, #0284C7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; 
 }
 .period{
     display: flex;
@@ -102,13 +110,16 @@
     display: flex;
     font-family: sans-serif;
     justify-content: space-around;
-    margin-top: 80px;
+    
+    max-width: 1000px;
+    margin: 0 auto;
 }
 .pro{
     display: flex;
     flex-direction: column;
     padding-right: 40px;
-   
+    
+    margin-top: 80px;
 }
 .pro img{
     padding-top: 25px;
@@ -126,6 +137,9 @@
 .pro button{
     padding-right: 15px;
     cursor: pointer;
+}
+.limit{
+    margin-top: 80px;
 }
 
 .inline{
@@ -196,7 +210,7 @@ display: flex;
    
     max-width: 580px;
     width: 100%;
-    margin: 0 auto;
+    margin-top: 60px;
     padding-left: 100px;
     
     
@@ -213,14 +227,16 @@ display: flex;
       display: flex;
       background-color: #F4F4F5;
       padding-bottom: 60px;
-      margin-top: 60px;
+     
+      max-width: 1200px;
+      margin: 0 auto;
     
 }
 .questions-2{
    
     max-width: 580px;
     width: 100%;
-    margin: 0 auto;
+    margin-top: 60px;
    
 }
 .q-b-c{
@@ -252,15 +268,43 @@ display: flex;
     padding-top: 70px;
     padding-bottom: 20px;
 }
+
 .email{
    
     max-width: 400px;
     width: 100%;
-    
+    display: flex;
+    flex-direction:column ;
     padding-top: 50px;
     padding-bottom: 20px;
 }
+.email input{
+    max-width: 143px;
+    max-height: 24px;
+    padding-left:12px ;
+    padding-top:10px ;
+    padding-bottom:13px ;
+   padding-right: 78px;
+    border: 1px transparent solid;
+}
 
+.email button{
+    width: 42px;
+    height: 40px;
+    background: linear-gradient(274.03deg, #06B6D4 0%, #0E7490 0.01%, #0284C7 100%);
+    padding: 10px 10px;
+    border:1px #0E7490 solid;
+}
+
+.bar{
+    display: flex;
+    max-width:255px ;
+    max-height:50px ;
+   background-color: #FFFFFF;
+   margin-top: 24px;
+}
+.bar-2{
+    padding-right:px;}
 .support{
    
     padding-left: 60px;

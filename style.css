@@ -1,5 +1,6 @@
-.b-c1{
-    max-height: 655px;
+*{
+    padding: 0%;
+   
 }
 .container{
     max-height: 755px;
@@ -70,6 +71,8 @@
 .m-portion h1{
     text-align: center;
     font-size: 96px;
+    color: #1F2937;
+    font-weight:  900px; ;
     padding-top: 50px;
     font-family: sans-serif;
 }
@@ -100,14 +103,13 @@ border-radius: 2px;
     border-radius: 2px;
 }
 .main{
-    margin: auto;
 }
 .box{
-    max-width:1100px;
-    width: 100%;
-   margin-top: 104px;
-   margin-left: auto;
-   margin-right: auto;
+    
+   
+    margin-left:80px ;
+   margin-right: 80px;
+margin-top: 120px;
     background: linear-gradient(274.03deg, #06B6D4 0%, #0E7490 0.01%, #0284C7 100%);
     
 }
@@ -121,8 +123,9 @@ border-radius: 2px;
 
 }
 .frame img{
-    max-width: 850px;
-   max-height: 600px;
+    max-width: 947px;
+   max-height: 628px;
+   margin-top: 30px;
 }
 .features{
     
@@ -133,12 +136,15 @@ border-radius: 2px;
     font-size: 60px;
     font-family: sans-serif;
     padding-top: 50px;
+    font-weight: 900;
+    color: #1F2937;
 }
 .h-features{
     
     display: flex;
     justify-content: space-around;
-    
+    max-width: 1010px;
+    margin: 0 auto;
 
 }
 .rabust{
@@ -154,7 +160,8 @@ border-radius: 2px;
 .d-features{
     display: flex;
     justify-content: space-around;
-    
+    max-width: 1010px;
+    margin: 0 auto;
 
 }
 .working{
@@ -165,12 +172,15 @@ border-radius: 2px;
     font-size:60px ;
     font-family: sans-serif;
     padding-top: 50px;
+    color: #1F2937;
+    font-weight: 900;
 }
 .m-working{
     
     display: flex;
-    justify-content: space-around;
+   justify-content: center;
     margin-top: 105px;
+    margin: 0 auto;
 }
 .signin{
    
@@ -187,18 +197,41 @@ border-radius: 2px;
     line-height: 25px;
 }
 .signin button{
-    padding:16px 30px ;
+    padding:16px 32px ;
     border:1px #0284C7 solid;
     color: #ffff ;
-    background-color: #0284C7;
     cursor: pointer;
+}
+#c-btn{
+    background: linear-gradient(274.03deg, #06B6D4 0%, #0E7490 0.01%, #0284C7 100%);
+    width: 139px;
+height: 48px;
+
 }
 .signin p{
     font-family: sans-serif;
-  
+}
+#c-btn-1{
+ border:1px #0E7490 solid;
+ background: #0891B2;
+border-radius:100%;
+padding:18px 16px ;
 
 }
+#c-btn-5 {
 
+    background-color: #ffff;
+  border:1px #ffff solid;
+}
+.pad-b-1{
+    display: flex;
+    
+}
+.pad-b{
+    padding-left: 220px;
+    margin-top: -5px;
+    display: flex;
+}
 .frame-2{
     padding-left:173px;
   
@@ -211,18 +244,15 @@ border-radius: 2px;
 .president{
        display: flex;
        justify-content: space-around;
+       flex-wrap: wrap;
       margin: 0 auto;
        max-width: 1440px;
-       max-height: 280px;
-       width: 100%;
-       height: 100%;
       
 }
 .im1{
-   
-  display: flex;
- padding-top: 170px;
-  padding-right: 100px;
+    display: flex;
+    padding-top: 170px;
+    padding-right: 100px;
 }
 .im1 img{
     height:60px ;
@@ -280,6 +310,8 @@ padding-right: 16px;
 .brands h1{
     font-size:60px;
     font-family: sans-serif;
+    font-weight: 900;
+    color: #1F2937;
 }
 .brands-u{
     display: flex;
@@ -315,48 +347,54 @@ padding-right: 16px;
    
     text-align: center;
     max-width: 1440px;
-    max-height: 300px;
+    max-height: 382px;
     width: 100%;
     height: 100%;
     font-family: sans-serif;
   
 }
 .numbers h1{
-  font-size: 40px;
+    font-weight: 900;
+    font-size: 60px;
  color: #ffff;
- padding-top: 20px;
+ padding-top: 80px;
 }
 .numbers p{
     color: #ffff;
-    padding-bottom: 140px;
+  margin-top: -30px;
 }
+
+
 .specs{
   display: flex;
-    justify-content: center;
+  justify-content: center;
     
 }
 .r-box{
     border:1px #e1e0e0 solid;
-    border-radius: 15px;
-    margin-top: -106px;
-    max-width: 230px;
+    border-radius: 16px;
+    margin-top: -120px;
+    max-width: 255px;
     width: 100%;
     height: 100%;
-    max-height: 220px;
+    max-height: 226px;
     text-align: center;
     font-family: sans-serif;
     margin-right: 25px;
     margin-left: 25px;
     background-color: #ffff;
-    
-    
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 1px 3px rgba(0, 0, 0, 0.1);
 }
 .r-box h1{
-    font-size: 30px;
-    padding-top: 40px;
+    font-weight: 800;
+font-size: 48px;
+    padding-top: 30px;
+    
 }
 .r-box p{
-    padding-bottom: 40px;
+    padding-bottom: 68px;
+    margin-top:-35px;
+    
 }
 .download{
     display: flex;
@@ -368,6 +406,7 @@ padding-right: 16px;
     font-size: 48px;
     font-family: sans-serif;
     margin-top: 200px;
+    color: #1F2937;
 }
 .d-button{
     margin-top: 60px;
@@ -379,7 +418,7 @@ padding-right: 16px;
 
 }
 .d-button button{
-    padding: 25px 50px;
+    padding: 16px 30px;
     background: linear-gradient(274.03deg, #06B6D4 0%, #0E7490 0.01%, #0284C7 100%);
     border:1px #0284C7 solid;
     color: #ffff;
@@ -406,21 +445,55 @@ padding-right: 16px;
 .footer p{
      line-height: 30px;
 }
+.footer a{
+    text-decoration: none;
+    color: #27272A;
+}
 .youtube{
     
     padding-left: 60px;
     padding-top: 70px;
     padding-bottom: 20px;
 }
+.youtube img{
+
+}
 .email{
    
     max-width: 400px;
     width: 100%;
-    
+    display: flex;
+    flex-direction:column ;
     padding-top: 50px;
     padding-bottom: 20px;
 }
+.email input{
+    max-width: 143px;
+    max-height: 24px;
+    padding-left:12px ;
+    padding-top:20px ;
+    padding-bottom:7px ;
+   
+    border: 1px transparent solid;
+}
 
+.email button{
+    width: 42px;
+    height: 40px;
+    background: linear-gradient(274.03deg, #06B6D4 0%, #0E7490 0.01%, #0284C7 100%);
+    padding: 8px 10px;
+    border:1px #0E7490 solid;
+}
+.bar{
+    display: flex;
+    max-width:255px ;
+    max-height:50px ;
+   background-color: #FFFFFF;
+   margin-top: 24px;
+}
+.bar-2{
+    padding-right: 78px;
+}
 .support{
    
     padding-left: 60px;

@@ -64,6 +64,7 @@
 }
 .c-heading h1{
     font-size: 96px;
+    font-weight: 900;color: #1F2937;
 }
 .c-heading p{
     padding-top: 16px;
@@ -77,6 +78,7 @@
     font-family: sans-serif;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding:20px 0px;
     border: 1px #D4D4D8 solid;
     margin: auto;
@@ -89,6 +91,7 @@
 .f-padd{
     padding-right: 10px;
     padding-left: 10px;
+   
 }
 .f-padd-2{
     padding-right: 10px;
@@ -101,6 +104,8 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .main-c img{
     padding-top: 30px;

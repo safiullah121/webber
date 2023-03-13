@@ -1,13 +1,21 @@
 *{
     margin: 0px;
     padding: 0px;
-   
+    font-family: 'Mulish', sans-serif;
 }
-
+#border{
+    border-bottom: 1.5px #18181B solid;
+    padding-bottom: 6px;
+}
 .container{
-    max-height: 1800px;
-    background:#A5F3FC1A ;
-    border:1px #A5F3FC1A solid;
+    
+  border:1px #A5F3FC0D solid;
+
+height: 100%;
+background: linear-gradient(180deg, rgba(165, 243, 252, 0.1) 23.31%, rgba(165, 243, 252, 0.05) 109.14%);
+
+
+
 }
 .navbar{
   
@@ -27,29 +35,31 @@
 }
 .signup button{
     border: 1px #CFFAFE solid;
-    padding: 10px 15px;
+    padding: 12px 20px;
     background-color: #CFFAFE;
     color: #0E7490;
-    margin-right: 10px;
-    
+    border-radius: 2px;
     cursor: pointer;
+    font-weight: 400;
+font-size: 14px;
+line-height: 14px;
 }
 .webber{
    
     padding-top: 30px;
     padding-left: 80px;
 }
-
+.u-list{
+    padding-top: 45px;
+}
 .u-list ul{
     display: flex;
     list-style: none;
-    padding-right: 0px;
    
 }
 .u-list ul li{
     padding-right: 30px;
-    padding-top: 45px;
-    font-family: sans-serif;
+    
 }
 .u-list ul li a{
     text-decoration: none;
@@ -62,7 +72,7 @@
 .p-heading{
   
     text-align: center;
-     font-family: sans-serif;
+     
      width: 100%;
      display: flex;
      flex-direction: column;
@@ -71,17 +81,44 @@
 .p-heading h1{
     font-size: 96px;
     padding-bottom: 13px;
-    margin-top: 200px;
+    margin-top: 150px;
     padding-right: 20px;
     font-weight: 900;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 120%;
+    /* or 115px */
+    
+    text-align: center;
+    letter-spacing: -2px;
+    
     color: #1F2937;
+    
+}
+.p-heading p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    
+    /* gray/600 */
+    
+    color: #52525B;
+    
 }
 #padd-2 h1{
-    background: linear-gradient(274.03deg, #06B6D4 0%, #0284C7 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text; 
+font-style: normal;
+font-weight: 800;
+text-align: center;
+background: linear-gradient(274.03deg, #06B6D4 0%, #0284C7 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+line-height: 38px;
+
 }
+
 .period{
     display: flex;
     justify-content: center;
@@ -101,16 +138,30 @@
     background-color: #CFFAFE;
     border-radius: 2px;
     cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #0E7490;
+    
 }
 #button-3{
     background: linear-gradient(274.03deg, #06B6D4 0%, #0E7490 0.01%, #0284C7 100%);
     cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 10px;
+    /* identical to box height, or 100% */
+    
+    text-align: center;
+    
+    /* gray/50 */
+    
+    color: #FAFAFA;
 }
 .r-price{
     display: flex;
-    font-family: sans-serif;
     justify-content: space-around;
-    
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -118,7 +169,7 @@
     display: flex;
     flex-direction: column;
     padding-right: 40px;
-    
+    padding-bottom:200px;
     margin-top: 80px;
 }
 .pro img{
@@ -153,7 +204,7 @@ display: flex;
     padding-left: 15px;
 }
 .plan{
-     padding-top: 25px;
+     padding-top: 20px;
      
     
 }
@@ -180,7 +231,7 @@ display: flex;
 }
 #back-c{
     background-color: #fff;
- 
+    margin-top: 71px;
     padding-left: 40px;
     box-shadow: 20px 22px 24px rgba(23, 18, 63, 0.120028);
      height: 100%;
@@ -192,7 +243,7 @@ display: flex;
     border: 1px #0E7490 solid;
     padding-left: 30px;
     padding-right: 30px;
-    cursor:help;
+    cursor:pointer;
 }
 
 .limit p{
@@ -201,10 +252,16 @@ display: flex;
 }
 .q-head{
     text-align: center;
-    font-size: 40px;
-    font-family: sans-serif;
-    margin-top: 150px;
     padding-top: 60px;
+}
+.q-head h1{
+    font-weight: 900;
+font-size: 60px;
+line-height: 60px;
+letter-spacing: -2px;
+color: #27272A;
+
+
 }
 .questions{
    
@@ -217,17 +274,38 @@ display: flex;
 }
 .ques{
    
-    max-width: 500px;
+    max-width: 495px;
     width: 100%;
     height: 100%;
     max-height: 80px;
     padding: 30px 0px;
 }
+.ques h1{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height, or 100% */
+    
+    letter-spacing: -1px;
+    
+    /* gray/800 */
+    
+    color: #27272A;
+    
+}
+.ques p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 12px;
+    color: #52525B;
+    
+    
+}
 .m-questions{
       display: flex;
       background-color: #F4F4F5;
-      padding-bottom: 60px;
-     
+      padding-bottom: 80px;
       max-width: 1200px;
       margin: 0 auto;
     
@@ -246,45 +324,92 @@ display: flex;
     background-color:#F4F4F5;
 }
 .footer{
-  margin:0 auto;
    
+    padding-top: 81px;
     display: flex;
     justify-content: space-around;
-    font-family: sans-serif;
     
+    margin: 0 auto;
     width: 100%;
     max-width: 1440px;
-    
+     height: 100%;
+     max-height: 373px;
 }
 .footer h1{
-    font-size: 17px;
+    font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+padding-bottom: 5px;
+letter-spacing: -0.01em;
+font-feature-settings: 'liga' off;
+
+color: #27272A;
+
 }
 .footer p{
-     line-height: 30px;
-}
-.youtube{
-    
-    padding-left: 60px;
-    padding-top: 70px;
-    padding-bottom: 20px;
-}
+    font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
 
+font-feature-settings: 'liga' off;
+
+/* gray/800 */
+
+color: #27272A;
+padding-top: 12px;
+}
+.footer a{
+    text-decoration: none;
+    color: #27272A;
+   
+}
+.youtube {
+
+    padding-left: 129px;
+   
+    
+}
+#you-p-1{
+         
+         
+}
+.youtube p{
+    font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #52525B;
+padding-top: 32px;
+
+
+
+}
+#you-p{
+   padding-right: 31px;
+}
+.you-d{
+    max-width: 80px;
+    width: 100%;
+    padding-top: 42px;
+   
+    padding-bottom: 84px;
+}
 .email{
    
     max-width: 400px;
     width: 100%;
     display: flex;
     flex-direction:column ;
-    padding-top: 50px;
+    padding-left: 40px;
     padding-bottom: 20px;
 }
 .email input{
     max-width: 143px;
     max-height: 24px;
     padding-left:12px ;
-    padding-top:10px ;
-    padding-bottom:13px ;
-   padding-right: 78px;
+    padding-top:7px ;
+    padding-bottom:7px ;
+   
     border: 1px transparent solid;
 }
 
@@ -295,54 +420,84 @@ display: flex;
     padding: 10px 10px;
     border:1px #0E7490 solid;
 }
-
-.bar{
+.bar-2{
     display: flex;
     max-width:255px ;
     max-height:50px ;
-   background-color: #FFFFFF;
-   margin-top: 24px;
+background-color: #FFFFFF;
+margin-top: 24px;
+  
 }
-.bar-2{
-    padding-right:px;}
+.bar-2 input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    background-color: transparent;
+    font-feature-settings: 'liga' off;
+    
+    /* gray/600 */
+    
+    color: #52525B;
+    outline: none;
+}
+.bar-2 button{
+    max-width: 42px;
+    max-height:40px ;
+    padding:9px 10px ;
+   margin-left: 57px;
+}
 .support{
-   
-    padding-left: 60px;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-bottom: 24px;
 }
 .company{
-   
-    padding-left: 60px;
-    padding-top: 50px;
-    padding-bottom: 20px;
+   padding-left: 200px;
+    padding-right: 80px;
+    padding-bottom: 24px;
 }
 .results{
     border:1px #0E7490 solid;
      text-align: center;
-     font-family: sans-serif;
-    line-height: 20px;
-    background-color: #0E7490;
+     background: linear-gradient(274.03deg, #06B6D4 0%, #0284C7 0.01%, #0E7490 100%);
     
 }
 .results h1{
-    font-size: 30px;
-    padding-top: 90px;
-    padding-bottom: 20px;
-    color: #fff;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    color: #FFFFFF;
+    padding-top: 60px;
 }
 .results p{
-    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 16px;
+    
+    
 }
 .re-button{
-    padding-top:40px ;
-    padding-bottom: 50px;
+    padding-top:32px ;
+    padding-bottom: 60px;
 }
 .results button{
-    padding: 15px 35px;
+    padding: 16px 32px;
     background-color: #fff;
     color: #0E7490;
     border: 1px #fff solid;
     border-radius: 2px;
     cursor: pointer;
+    font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+
+
+/* cyan/700 */
+
+color: #0E7490;
 }

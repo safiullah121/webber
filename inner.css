@@ -1,12 +1,13 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: 'Mulish', sans-serif;
 }
 
 
 .container{
     max-height: 3100px;
-    background-color: #A5F3FC1A;
+    background: linear-gradient(180deg, rgba(165, 243, 252, 0.1) 23.31%, rgba(165, 243, 252, 0.05) 109.14%);
     border:1px #A5F3FC1A solid;
 }
 .navbar{
@@ -27,11 +28,15 @@
 }
 .signup button{
     border: 1px #CFFAFE solid;
-    padding: 10px 15px;
+    padding: 12px 20px;
     background-color: #CFFAFE;
     color: #0E7490;
-   
     border-radius: 2px;
+    cursor: pointer;
+    font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+    
    
 }
 .webber{
@@ -43,13 +48,13 @@
 .u-list ul{
     display: flex;
     list-style: none;
-    padding-left: 40px;
+    
    
 }
 .u-list ul li{
     padding-right: 30px;
     padding-top: 45px;
-    font-family:sans-serif;
+    
 }
 .u-list ul li a{
     text-decoration: none;
@@ -58,13 +63,17 @@
 .u-list ul li a:hover{
     color: #0E7490;
 }
-
+#border{
+    border-bottom: 1.5px #18181B solid;
+    padding-bottom: 6px;
+}
 .software{
-    font-family: sans-serif;
+    
     display: flex;
     justify-content: space-around;
    max-width: 1440px;
    margin: 0 auto;
+   margin-top: 100p;
 
 }
 .software-n img{
@@ -76,16 +85,39 @@
 }
 .soft-1{
    
-    max-width: 500px;
+    max-width: 676px;
     width: 100%;
-    margin-top: 100px;
+    margin-top: 210px;
   
+    
 }
 .soft-1 p{
-   padding-top: 10px;
+   padding-top: 12px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   /* or 150% */
+   
+   font-feature-settings: 'liga' off;
+   
+   /* gray/600 */
+   
+   color: #52525B;
 }
 .soft-1 h1{
-    padding-top: 13px;
+    padding-top: 12px;
+    font-weight: 800;
+font-size: 36px;
+line-height: 36px;
+/* identical to box height, or 100% */
+
+letter-spacing: -0.02em;
+font-feature-settings: 'liga' off;
+
+/* gray/800 */
+
+color: #27272A;
+
 }
 .para1{
    display: flex;
@@ -99,11 +131,14 @@
 }
 #r-pad{
     padding-right: 75px;
-    padding-top: 0px;
+    padding-top: 32px;
 }
 #r-padd{
     padding-left: 62px;
-    padding-top: 0px;
+    padding-top: 32px;
+}
+#pack{
+    max-width: 630px;
 }
 .soft-2{
     
@@ -134,7 +169,7 @@
     padding: 10px 24px;
 }
 .software-2{
-    margin-top: 40px;
+    margin-top: 100px;
 }
 #btn1{
     background-color: #fff;

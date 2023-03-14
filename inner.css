@@ -1,14 +1,14 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Mulish', sans-serif;
 }
 
 
 .container{
-    max-height: 3100px;
-    background: linear-gradient(180deg, rgba(165, 243, 252, 0.1) 23.31%, rgba(165, 243, 252, 0.05) 109.14%);
+    max-height: 3000px;
     border:1px #A5F3FC1A solid;
+    background-color: #A5F3FC1A;
 }
 .navbar{
   
@@ -18,6 +18,10 @@
     width: 100%;
     max-height: 100px;
     margin: 0 auto;
+
+
+
+
 }
 
 
@@ -70,25 +74,49 @@ line-height: 14px;
 .software{
     
     display: flex;
-    justify-content: space-around;
-   max-width: 1440px;
+   justify-content: space-around;
+   max-width: 1280px;
    margin: 0 auto;
-   margin-top: 100p;
 
 }
 .software-n img{
     max-width: 600px;
-    margin-top: 20px;
+   padding-bottom: 16px;
 }
 .software-n p{
     padding-bottom: 32px;
+    padding-top: 16px;
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+
+/* gray/800 */
+
+color: #27272A;
+}
+.software-n h4{
+    padding-top: 16px;
+    font-weight: 600;
+font-size: 16px;
+line-height: 16px;
+/* identical to box height, or 100% */
+
+letter-spacing: -0.02em;
+font-feature-settings: 'liga' off;
+
+/* gray/800 */
+
+color: #27272A;
+
 }
 .soft-1{
    
     max-width: 676px;
     width: 100%;
-    margin-top: 210px;
-  
+    margin-top: 200px;
+    
     
 }
 .soft-1 p{
@@ -96,12 +124,6 @@ line-height: 14px;
    font-weight: 400;
    font-size: 16px;
    line-height: 24px;
-   /* or 150% */
-   
-   font-feature-settings: 'liga' off;
-   
-   /* gray/600 */
-   
    color: #52525B;
 }
 .soft-1 h1{
@@ -122,54 +144,108 @@ color: #27272A;
 .para1{
    display: flex;
    line-height: 40px;
- 
 }
 .para2{
     display: flex;
     line-height: 40px;
-    
 }
 #r-pad{
     padding-right: 75px;
     padding-top: 32px;
+    color: #27272A;
 }
 #r-padd{
     padding-left: 62px;
     padding-top: 32px;
+    color: #27272A;
 }
 #pack{
     max-width: 630px;
 }
 .soft-2{
-    
-    max-width: 700px;
+    max-width: 676px;
     width: 100%;
    margin-top: 100px;
-   
-  
+   padding: 0;
 }
+.soft-2 p{
+    font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+max-width: 500px;
+color: #27272A;
+padding-bottom: 32px;
+}
+.soft-2 h1{
+    font-weight: 700;
+font-size: 28px;
+line-height: 28px;
+/* identical to box height, or 100% */
+
+letter-spacing: -0.02em;
+font-feature-settings: 'liga' off;
+
+/* gray/800 */
+
+color: #27272A;
+
+padding-bottom: 20px;
+}
+
 .soft-3{
     border: 1px #0E7490 solid;
-    max-width: 400px;
+    max-width: 425px;
     width: 100%;
+    max-height: 312px;
+    height: 100%;
     padding: 20px 30px;
     background: linear-gradient(274.03deg, #0284C7 0%, #0E7490 100%);
     color: #fff;
-    margin-top: 40px;
-   
+    margin-top: 52px;
 }
 .soft-3 h1{
-    padding-top:15px ;
-    padding-bottom: 15px;
+    padding-top:40px ;
+    padding-bottom: 32px;
+    padding-left:32px ;
+    font-weight: 700;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 100% */
+
+letter-spacing: -0.01em;
+
+color: #FFFFFF;
 }
 .soft-3 p{
-    padding-bottom: 30px;
+    max-width: 385px;
+    width: 100%;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    
+    color: #FFFFFF;
 }
 .soft-3 button{
     padding: 10px 24px;
+    margin-right: 16px;
+    font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+}
+.hold{
+    padding-left: 32px;
 }
 .software-2{
-    margin-top: 100px;
+    margin-top: 89px;
+    padding-left:116px;
+}
+.software-2 img {
+    max-width: 485px;
+    max-height: 400px;
 }
 #btn1{
     background-color: #fff;
@@ -190,11 +266,9 @@ border-radius: 2px;
 .milestones{
    
     max-width: 600px;
-    width: 100%;
-    font-family: sans-serif;
     display: flex;
     flex-direction: column;
-    padding-left: 80px;
+
     
   
   
@@ -205,8 +279,7 @@ border-radius: 2px;
 .milestones img{
     max-width: 679px;
     width: 100%;
-    margin-top: 40px;
-    padding-left: 20px;
+    
     padding-top: 20px;
    
 }
@@ -223,125 +296,218 @@ border-radius: 2px;
 }
 .more{
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     line-height: 25px;
 }
 .swiss{
-    font-family: sans-serif;
-    max-width: 180px;
+    max-width: 250px;
     width: 100%;
-    padding-right: 30px;
     padding-bottom: 50px;
     padding-top: 30px;
     margin: 0 auto;
 }
 .swiss img{
-    max-width: 190px;
+    max-width: 250px;
+
+}
+.swiss p{
+    font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+font-feature-settings: 'liga' off;
+
+/* gray/600 */
+
+color: #52525B;
 
 }
 .swiss button{
-    background-color:#F4F4F5;
-    border: 1px #F4F4F5 solid;
+    border: 1px transparent solid;
+    background-color: transparent;
+    cursor: pointer;
 }
-#btn-p{
-    margin-bottom: -4px;
-    margin-left: -4px;
+.swiss h3{
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 28px;
+    /* identical to box height, or 100% */
     
+    letter-spacing: -0.02em;
+    font-feature-settings: 'liga' off;
+    
+    /* gray/800 */
+    
+    color: #27272A;
+    padding-top: 12px;
+    padding-bottom:8px ;
+}
+#adjust{
+    padding-top: 25px;
 }
 #b-c{
-    color: #0E7490;
-    text-decoration: underline;
-}
-h2{
-    padding-bottom: 20px;
-    padding-left: 55px;
-    padding-top: 40px;
-    font-family: sans-serif;
+    padding-top: 19px;
 }
 .m-div{
-    
+    display: flex;
+    flex-direction: column;
     margin-top: 100px;
-    
-    max-width: 1440px;
+    max-width: 1100px;
     margin: 0 auto;
-    
-   
+  
+ width: 100%;
+ height: 100%;  
+}
+.m-div h2{
+    font-weight: 700;
+font-size: 28px;
+line-height: 28px;
+letter-spacing: -0.02em;
+font-feature-settings: 'liga' off;
+color: #27272A;
+padding-bottom: 47px;
+margin-left: 30px;
+padding-top: 59px;
 }
 .margin-8{
-    border: 1px  #dedede solid;
+    border: 1px solid #E4E4E7;
+    border: 2px #E4E4E7 solid;
     background-color:  #F4F4F5;
 }
-.margin-6{
+#margin-6{
     background-color:#F4F4F5;
+    border: 2px #E4E4E7 solid;
 }
 .footer{
    
-   margin: 0 auto;
+    padding-top: 81px;
     display: flex;
     justify-content: space-around;
-    font-family: sans-serif;
-    
+    margin: 0 auto;
     width: 100%;
     max-width: 1440px;
-    
+     height: 100%;
+     max-height: 379px;
 }
 .footer h1{
-    font-size: 17px;
+    font-weight: 500;
+font-size: 20px;
+line-height: 30px;
+padding-bottom: 5px;
+letter-spacing: -0.01em;
+font-feature-settings: 'liga' off;
+
+color: #27272A;
+
 }
 .footer p{
-     line-height: 30px;
-}
-.youtube{
-    
-    padding-left: 60px;
-    padding-top: 70px;
-    padding-bottom: 20px;
-}
+    font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
 
+font-feature-settings: 'liga' off;
+
+/* gray/800 */
+
+color: #27272A;
+padding-top: 12px;
+}
+.footer a{
+    text-decoration: none;
+    color: #27272A;
+   
+}
+.youtube {
+
+    padding-left: 129px;
+   
+    
+}
+#you-p-1{
+         
+         
+}
+.youtube p{
+    font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+color: #52525B;
+padding-top: 32px;
+
+
+
+}
+#you-p{
+   padding-right: 31px;
+}
+.you-d{
+    max-width: 80px;
+    width: 100%;
+    padding-top: 42px;
+   
+    padding-bottom: 84px;
+}
 .email{
    
     max-width: 400px;
     width: 100%;
     display: flex;
     flex-direction:column ;
-    padding-top: 50px;
+    padding-left: 40px;
     padding-bottom: 20px;
 }
 .email input{
     max-width: 143px;
     max-height: 24px;
     padding-left:12px ;
-    padding-top:10px ;
+    padding-top:7px ;
     padding-bottom:7px ;
-   
+    background-color: #FFFFFF;
     border: 1px transparent solid;
 }
 
 .email button{
     width: 42px;
-    height: 40px;
+    height: 42px;
     background: linear-gradient(274.03deg, #06B6D4 0%, #0E7490 0.01%, #0284C7 100%);
-    padding: 8px 10px;
+    padding: 10px 10px;
     border:1px #0E7490 solid;
 }
-.bar{
+.bar-2{
     display: flex;
     max-width:255px ;
     max-height:50px ;
-   background-color: #FFFFFF;
-   margin-top: 24px;
+background-color: #FFFFFF;
+margin-top: 24px;
+  
 }
-.bar-2{
-    padding-right: 78px;}
+.bar-2 input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    background-color: transparent;
+    font-feature-settings: 'liga' off;
+    
+    /* gray/600 */
+    
+    color: #52525B;
+    outline: none;
+}
+.bar-2 button{
+    max-width: 42px;
+    max-height:40px ;
+    padding:9px 10px ;
+   margin-left: 57px;
+}
 .support{
-   
-    padding-left: 60px;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-bottom: 24px;
 }
 .company{
-   
-    padding-left: 60px;
-    padding-top: 50px;
-    padding-bottom: 20px;
+   padding-left: 200px;
+    padding-right: 80px;
+    padding-bottom: 24px;
 }

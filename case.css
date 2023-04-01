@@ -6,8 +6,7 @@
 
 .container{
     max-height: 3300px;
-    background: linear-gradient(180deg, rgba(165, 243, 252, 0.1) 23.31%, rgba(165, 243, 252, 0.05) 109.14%);
-    border:1px #A5F3FC1A solid;
+   background-color: #A5F3FC0D;
 }
 .navbar{
   
@@ -42,9 +41,8 @@ line-height: 14px;
    
 }
 .webber{
-   
-    padding-top: 30px;
-    padding-left: 80px;
+    padding-left: clamp(30px,6.8vw,80px);
+    padding-top: clamp(25px,2.4vw,30px);
 }
 .u-list{
     padding-top: 45px;
@@ -75,19 +73,22 @@ line-height: 14px;
 }
 .c-heading h1{
     font-weight: 900;
-    font-size: 96px;
+    font-size: clamp(32px,7.5vw,96px);
     line-height: 120%;
     text-align: center;
     letter-spacing: -2px;
     color: #1F2937;
 }
 .c-heading p{
+    margin: 0 auto;
     padding-top: 13px;
     font-weight: 400;
-font-size: 20px;
+font-size: clamp(12px,1.6vw,20px);
 line-height: 25px;
 text-align: center;
 color: #52525B;
+max-width:clamp(300px,62.4vw,800px) ;
+width: 100%;
 }
 .form select{
     background-color: #A5F3FC0D;
@@ -99,13 +100,13 @@ color: #52525B;
     padding:20px 0px;
     border: 1px #D4D4D8 solid;
     margin: auto;
-    max-width: 406px;
+    max-width: clamp(300px,31.7vw,406px);
     width: 100%;
     max-height: 64px;
     height: 100%;
     margin-top: 40px;
     font-weight: 500;
-font-size: 16px;
+font-size: clamp(12px,1.25vw,16px);
 line-height: 16px;
 color: #52525B;
 
@@ -121,28 +122,33 @@ color: #52525B;
 }
 .main-c{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 87px;
     flex-wrap: wrap;
     padding-bottom: 50px;
-    max-width: 1440px;
+    max-width: 1087px;
     width: 100%;
     margin: 0 auto;
 }
-
+.main-c img{
+    max-width: clamp(300px,39vw,500px);
+    max-height: clamp(350px,46.8vw,600px);
+}
 .same{
     max-width: 500px;
     width: 100%;
 }
 .same p{
     font-weight: 400;
-font-size: 16px;
+font-size: clamp(12px,1.25vw,16px);
 line-height: 24px;
 color: #52525B;
 padding-top: 8px;
+max-width:clamp(300px,39vw,500px) ;
 }
 .same h1{
     font-weight: 800;
-font-size: 28px;
+font-size: clamp(18px,2.1vw,28px);
 line-height: 28px;
 letter-spacing: -0.02em;
 font-feature-settings: 'liga' off;
@@ -165,5 +171,53 @@ padding-top: 12px;
 #p-b-c{
     color: #0E7490;
 }
-
-
+@media(max-width:1440px){
+    #icon{
+        display: none;
+    }
+}
+@media(max-width:1120px){
+    .main-c{
+        flex-direction: column;
+      
+        justify-content: center;
+        align-items: center;
+    }
+    .m-c-1{
+        margin-top: 80px;
+    }
+    .m-c-2{
+        margin-top: -80px;
+    }
+}
+@media(max-width:750px){
+    .webber img{
+        width: clamp(50px,5.7vw,73px);
+    }
+#icon{
+display: block;
+      font-size: clamp(24px,2.3vw,30px);
+     padding-right:20px ;
+     cursor: pointer;
+}
+.u-list{
+padding-top: 32px;
+}
+.u-list ul{
+flex-direction: column;
+display: none;
+}
+li{
+padding-top: 30px;
+}
+ .s-b-t{
+    background-color:black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    
+ }
+ .signup{
+    display: none;
+ }
+}

@@ -5,8 +5,7 @@
 }
 
 .container{
-    max-height: 3300px;
-   background-color: #A5F3FC0D;
+  
 }
 .navbar{
   
@@ -16,6 +15,9 @@
     width: 100%;
     max-height: 100px;
     margin: 0 auto;
+}
+#icon{
+    display: none;
 }
 
 
@@ -45,6 +47,9 @@ line-height: 14px;
     padding-top: clamp(25px,2.4vw,30px);
 }
 .u-list{
+    font-weight: 400;
+    font-size:clamp(14px,1.25vw,16px);
+    line-height: 16px;
     padding-top: 45px;
 }
 .u-list ul{
@@ -66,10 +71,14 @@ line-height: 14px;
 .u-list ul li a:hover{
     color: #0E7490;
 }
-
+.blur{
+    width: 100%;
+    padding-bottom: clamp(45px,10.8vw,139px);
+    background: rgba(165, 243, 252, 0.8);
+filter: blur(500px);
+}
 .c-heading{
     text-align: center;
-    margin-top: 139px;
 }
 .c-heading h1{
     font-weight: 900;
@@ -171,11 +180,6 @@ padding-top: 12px;
 #p-b-c{
     color: #0E7490;
 }
-@media(max-width:1440px){
-    #icon{
-        display: none;
-    }
-}
 @media(max-width:1120px){
     .main-c{
         flex-direction: column;
@@ -221,3 +225,14 @@ padding-top: 30px;
     display: none;
  }
 }
+@media(max-width:650px){
+    .blur{
+        background: rgba(165, 243, 252, 0.8);
+filter: blur(200px);
+    }
+}
+@media(max-width:800px){
+    .blur{
+        background: rgba(165, 243, 252, 0.8);
+filter: blur(250px);
+    }}

@@ -6,9 +6,7 @@
 
 
 .container-b{
-    width: 100%;
-    max-width: 1440px;
-    background: #A5F3FC0D;
+
 }
 .navbar{
   
@@ -24,7 +22,9 @@
 
 }
 
-
+#icon{
+    display: none;
+}
 .signup{
     padding-right: 80px;
     padding-top:33px ;
@@ -43,12 +43,23 @@ line-height: 14px;
     
    
 }
+.blur{
+    width: 100%;
+    padding-bottom: clamp(40px,9.7vw,125px);
+    background: rgba(165, 243, 252, 0.8);
+filter: blur(500px);
+}
 .webber{
    
     padding-left: clamp(30px,6.8vw,80px);
     padding-top: clamp(25px,2.4vw,30px);
 }
-
+.u-list{
+    font-weight: 400;
+    font-size:clamp(14px,1.25vw,16px);
+    line-height: 16px;
+    padding-top: 45px;
+}
 .u-list ul{
     display: flex;
     list-style: none;
@@ -57,7 +68,6 @@ line-height: 14px;
 }
 .u-list ul li{
     padding-right: 30px;
-    padding-top: 45px;
     
 }
 .u-list ul li a{
@@ -504,11 +514,7 @@ margin-top: 24px;
     padding:9px 10px ;
    margin-left: 57px;
 }
-@media(max-width:1440px){
-    #icon{
-        display: none;
-    }
-}
+
 @media(max-width:750px){
     .webber img{
         width: clamp(50px,5.7vw,73px);
@@ -644,4 +650,14 @@ padding: 0px 16px;
 }
 @media(max-width:685px){
 
-}
+}  @media(max-width:800px){
+    .blur{
+        background: rgba(165, 243, 252, 0.8);
+filter: blur(250px);
+    }}
+    @media(max-width:650px){
+        .blur{
+            background: rgba(165, 243, 252, 0.8);
+filter: blur(200px);
+        }
+    }

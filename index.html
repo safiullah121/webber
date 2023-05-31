@@ -1,240 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/1aa2a2fb92.js" crossorigin="anonymous"></script>
-    <title>webber</title>
-    <link rel="stylesheet" href="/style.css">
+  <title>Notes App</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 10px;
+    }
+    #notes-list {
+      margin-top: 20px;
+    }
+    .note {
+      background-color: #f2f2f2;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .note button {
+      margin-left: 10px;
+    }
+  </style>
 </head>
 <body>
- 
-   <header class="container-1" >
-    <div class="container" >
-      <nav>
-    <div class="navbar">
-      <div class="webber"><img src="/img/webber.svg" alt="webber"></div>
-   
-      <div class="u-list">
-        <i class="fas fa-bars" id="icon"></i>
-        <ul >
-          <li><a id="border" href="/index.html">Overview</a></li>
-          <li><a href="/pricing.html">Pricing</a></li>
-          <li><a href="/case.html">Case Studies</a></li>
-          <li><a href="/inner.html">FAQ</a></li>
-        </ul>
-       </div>
-   
-    <div class="signup" ><button>Sign In</button></div>
-  
+  <div class="container">
+    <h1>Notes App</h1>
+    <input type="text" id="note-title" placeholder="Enter note title">
+    <textarea id="note-details" placeholder="Enter note details"></textarea>
+    <button onclick="addNote()">Add Note</button>
+    <h2>Your Notes</h2>
+    <div id="notes-list"></div>
   </div>
-</nav>
-<div class="blur"></div>
-   <div class="main">
-  <div class="m-portion">
-  <div class="m-heading">
-    <h1 id="m-head">DEPLOY YOUR <br> FRONT-END</h1>
-  </div>
-</div>
- <div class="m-btn">
-  <div class="bt-1">
-  <button><div>Get started</div></button> </div>
-  <div class="bt-2">
-  <button><div>Learn more</div></button> </div>
-</div> 
-</div>
-</div>
 
-
- <div class="box"></div></header>
-<div class="frame">
-  <img src="/img/Light.png" alt="">
-</div>
-
- <section>
- <div class="features">
-  <h1>Tailor-made features</h1>
-</div>
-<div class="m-f-div">
-  <div class="h-features">
-  <div class="rabust">
-    <img src="/img/rabust.svg" alt="">
-    <h1>Robust workflow</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique.</p>
-  </div>
-  <div class="rabust">
-    <img src="/img/1.svg" alt="">
-    <h1>Flexibility</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique.</p>
-  </div>
-  <div class="rabust" id="rabust-1">
-    <img src="/img/2.svg" alt="">
-    <h1>User friendly</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique.</p>
-  </div>
-</div>
-<div class="d-features">
-  <div class="rabust">
-    <img src="/img/3.svg" alt="">
-    <h1>Multiple layouts</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique.</p>
-  </div>
-  <div class="rabust">
-    <img src="/img/4.svg" alt="">
-    <h1>Better components</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique.</p>
-  </div>
-  <div class="rabust"  id="rabust-2">
-    <img src="/img/5.svg" alt="">
-    <h1>Well organised</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed erat nibh tristique.</p>
-  </div>
-</div>
-</div>
-</section>
-
-<section class="f-margin">
-  <div class="working">
-    <h1>How it works</h1>
-  </div>
- <div class="m-working">
-  <div class="signin">
-    <h1>Sign Up</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat vitae a consectetur dolor. Elementum habitant urna, ac quis laoreet urna purus. Aliquam at est vel auctor rhoncus et. Sit ac enim, malesuada mattis. Dignissim nibh augue posuer </p>
-  <div class="pad-b-1"><button id="c-btn">Learn more</button> <div class="pad-b"> <button id="c-btn-5"><img src="/img/Arrow 4.svg" alt=""></button> <button id="c-btn-1"><img src="/img/Arrow 3.svg" alt=""></button></div> </div> 
-</div>
-
-  <div class="frame-2">
-    <img src="/img/frame.svg" alt="">
-</div>
-  </div>
-</section>
- <section class="margin">
-  <div class="president">
-    <div class="im1">
-      <img src="/img/Picture.svg" alt="">
-      <div class="flex-im1">
-   <h1>Jenny Wilson</h1>
-      <p>Vice President</p>
-    </div>
-      </div>
-      <div class="im2">
-        <div ><img src="/img/“.svg" alt=""></div>
-      <p>Eos enim quo est necessitatibus nobis consectetur rerum qui dolores. Quia commodi simi lique est sed aut.  Aspernatur voluptas nisi tenetur voluptates iusto debitis ex voluptatem odit. Repudiandae et et quod et. Enim sit delectus numquam. Molestiae aut voluptatem. Quia commodi similique est sed aut. Aspernatur voluptas nisi tenetur voluptates iusto debitis.</p>
-
-    </div>
-  </div>
-</section>
-<section>
- <div class="brands">
-    <h1>Brands using our services</h1>
-  </div>
-  <div class="m-brands">
-  <div class="brands-u">
-    <div class="micro">
-       <img src="/img/Microsoft Logo.svg" alt=""> 
-    </div>
-    <div class="micro">
-       <img src="/img/OYO Logo.svg" alt=""> 
-    </div>
-    <div class="micro">
-      <img src="/img/Walmart Logo.svg" alt=""> 
-    </div>
-    <div class="micro">
-      <img src="/img/air.svg" alt="">
-    </div>
-
-  </div>
-  <div class="brands-l">
-   
-    <div class="micro">
-     <img src="/img/FedEx Logo.svg" alt="">
-    </div>
-    <div class="micro">
-     <img src="/img/BookMyShow Logo.svg" alt="">
-    </div>
-    <div class="micro"><img src="/img/Amazon Logo.svg" alt=""></div>
-    <div class="micro"><img src="/img/Google Logo.svg" alt=""></div>
-  </div>
-</div>
-</section>
-<section class="margin-2">
-  <div class="numbers">
-    <h1>By the numbers</h1>
-    <p>5 years, consistent quality and you get results. No matter what</p>
-  </section>
-  </div>
-  
- <div class="specs">
-  <div class="r-box" id="box-1">
-  <h1>40+</h1>
-  <p>Happy Clients</p>
-  </div>
-  <div class="r-box"id="box-2">
-    <h1>540+</h1>
-    <p>Projects Completed</p>
-  </div>
-  <div class="r-box"id="box-3">
-    <h1>300</h1>
-    <p>Dedicated Members</p>
-  </div>
-  <div class="r-box"id="box-4">
-    <h1>25+</h1>
-    <p>Awards Won</p>
-  </div>
-  
-</div>
-</section>
-<section >
-
-  <div class="d-heading">
-    <h1>Build the next big thing and ship to market faster </h1>
-  </div>
-  <div class="download">
-  <div class="d-button"> 
-    <button>Download Now</button>
-  </div>
-</div>
-</section>
-<footer class="margin-3">
-  <div class="footer">
-    <div class="youtube">
-      <a href="/index.html"> <img id="you-p-1" src="/img/webber.svg" alt=""></a>
-       <p>Copyright © 2021 WEBBER. <br>
-        All rights reserved</p>
-       <div class="you-d"><a href="https://twitter.com/?lang=en"> <img id="you-p" src="/img/1000.svg" alt=""></a> <a href="https://www.youtube.com/"><img src="/img/1001.svg" alt=""></a></div>
-    </div>
-  
-    <div class="footer-2">
-      <div class="responsive">
-    <div class="company">
-      <h1> <a href="">Company</a></h1>
-      <p> <a href=""> About us</a></p>
-       <p><a href="">  Blog </a><br></p>
-<p><a href="">  Contact us</a> </p>
-<p>  <a href="">  Pricing</a> </p>
-<p>    <a href=""> Testimonials</a> </p>
-      </p>
-    </div>
-    <div class="support">
-      <h1> <a href="">Support</a></h1>
-      <p><a href="">Help center</a> </p>
-<p><a href="">Terms of service</a></p> 
-<p><a href="">Legal</a><br></p>
-<p><a href=""> Privacy</a> <br></p>
-<p>  <a href="">policyStatus</a></p>
-    </div>
-      </div>
-    <div class="email">
-      <h1> <a href="">Get Updates and more</a></h1>
-      
-      <div class="bar-2">  <input type="text" placeholder="Your email address">
-      <button> <img src="/img/Vector.svg" alt=""></button></div>
-  </div>
-</div>
-</div>
-</footer>
-
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>

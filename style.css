@@ -1,27 +1,185 @@
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  h1, h2 {
-    text-align: center;
-  }
-  input[type="text"], textarea {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#page-2{
+    display: none;
+}
+.notes{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: aliceblue;
+}
+.notes h1{
+    font-size:35px;
+}
+.notes p{
+    font-size:20px ;
+}
+.text{
+    display: flex;
+    padding-right: 30px;
+    margin-top: 35px;
+}
+#filter {
+    padding:10px 20px ;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    border: 1px #fff solid;
+    margin-right: 5px;
+}
+#sort{
+    padding:10px 20px ;
+    font-size: 16px;
+    border-radius: 5px;
+    border:1px #fff solid;
+    color: rgb(92, 90, 90);
+    cursor: pointer;
+    outline: none;
+}
+
+#m-notes{
+ max-width: 800px;
+ width: 100%;
+ margin: 0 auto;
+ margin-top: 20px;
+}
+.viewer{
+     margin: 30px;
+     background: #f7f9f9;
+     border:1px solid rgb(217, 211, 211);
+     padding-top: 6px;
+     padding-bottom: 10px;
+     padding-left: 5px;
+     cursor: pointer;
+}
+.viewer p{
+    color: #666b6b;
+    font-size: 16px;
+}
+.viewer h3{
+    color: #565959;
+    font-size: 25px;
+}
+.color{
+    max-width: 1440px;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  button {
-    padding: 10px;
-  }
-  #notes-list {
+    margin: 0 auto;
+    background: #0E7490;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding: 0 30px;
+}
+.c-button{
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+.create{
+    max-width:930px ;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.create a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#create-notes{
+    border-radius: 5px;
+    border: 0;
+    background: #2392b0;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 17px;
+    cursor: pointer;
     margin-top: 20px;
-  }
-  .note {
-    background-color: #f2f2f2;
+    margin-left: 40px;
+}
+button{
+    cursor: pointer;
+}
+.notes{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: aliceblue;
+    margin: 0 auto;
+    max-width: 930px;
+    width: 100%;
+}
+.notes h1{
+    font-size:35px;
+}
+.notes p{
+    font-size:20px ;
+}
+.color-1{
+    background: #0E7490;
+    display: flex;
+    justify-content: space-around;
+  
+}
+.home a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.home{
+    max-width: 890px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.home button{
+    border: 0;
+    border-radius: 5px;
+    padding: 12px 24px;
+    background: #2490ae;
+    color: aliceblue;
+    font-size: 17px;
+}
+.textarea{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+.textarea ::placeholder{
+    font-family: sans-serif;
+    color: rgb(159, 158, 158);
+}
+.textarea input{
+    border: 1px gray solid;
     padding: 10px;
-    margin-bottom: 10px;
-  }
-  .note button {
-    margin-left: 10px;
-  }
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+}
+.textarea textarea{
+    margin-top: 20px;
+    font-size: 17px;
+    border: 1px gray solid;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+.l-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 360px;
+    padding-top: 30px;
+}
+.l-buttons button{
+    padding: 12px 24px;
+    background: #2490ae;
+    border-radius: 5px;
+    font-size: 17px;
+    border: 0;
+    color: aliceblue;
+}

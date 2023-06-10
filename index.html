@@ -1,48 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Notes App</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .container {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    input[type="text"], textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-    button {
-      padding: 10px;
-    }
-    #notes-list {
-      margin-top: 20px;
-    }
-    .note {
-      background-color: #f2f2f2;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-    .note button {
-      margin-left: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-  <div class="container">
-    <h1>Notes App</h1>
-    <input type="text" id="note-title" placeholder="Enter note title">
-    <textarea id="note-details" placeholder="Enter note details"></textarea>
-    <button onclick="addNote()">Add Note</button>
-    <h2>Your Notes</h2>
-    <div id="notes-list"></div>
-  </div>
-
-  <script src="script.js"></script>
+    <div class="page" id="page-1">
+    <section class="color">
+    <div class="notes">
+        <h1>Notes App</h1>
+        <p>Take Notes and never forget</p></div>
+       <div class="text"><input id="filter"  type="text"  placeholder="Filter Notes">
+        <select id="sort">
+        <option value="0">Sort By Last Eidited</option>
+        <option value="1">Sort By alphabatically</option>
+        <option value="2">Sort By recent created</option>
+    </select>
+    </div>
+  </section>
+    <div id="m-notes">
+    <div id="showingnotes" class="viewer" onclick="viewer()">
+        <h3></h3>
+    <p class="times" onclick="days(),this.value"></p>
+    </div>
+    </div>
+    <div class="c-button">
+       <button id="create-notes" onclick="newdiv()"> Create Notes</button> 
+    </div>
+</div>
+<div class="page" id="page-2">
+    <section class="color-1">
+        <div class="notes">
+            <h1>Notes App</h1>
+            <p>Take Notes and never forget</p>
+        </div>
+        </section>
+        <div class="home">
+           <a href="/index.html"> <button >Home</button></a>
+        </div>
+        <section class="textarea">
+            <input id="title" type="text" placeholder="Title" >
+            <textarea id="discription" name=""  cols="30" rows="10" placeholder="Discription" ></textarea>
+        </section>
+        <section class="l-buttons">
+        <div class="a-button">
+            <button id="removenotes" >Remove Note</button>
+        </div>
+    
+        <div  class="b-button">
+         <button id="add-button" onclick="goto2()" >Add Note</button>
+        </div>
+    </section>
+</div>
+<script src="app.js"></script>
 </body>
 </html>

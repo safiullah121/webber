@@ -176,12 +176,12 @@ search.addEventListener("input",function(){
   let notes=localStorage.getItem('notes');
   Array.from(note).forEach(function (element) {
     let card =element.getElementsByTagName("h3")[0].innerText;
-    if (card.startsWith(inputval)) {
+    let note=document.getElementsByClassName('viewer');
+    if (card.includes(inputval)) {
       element.style.display="block"
     }
-    else{
+    else {
       element.style.display="none"
-      mnotes.innerHTML = "No Notes To Show!";
     }
   })
 })

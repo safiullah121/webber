@@ -16,7 +16,8 @@
         <h1>Notes App</h1>
         <p>Take Notes and never forget</p></div>
        <div class="text"><input id="filter"  type="text"  placeholder="Filter Notes">
-        <select id="sort">
+        <select id="sort" >
+        <option value="8">Sort Notes</option>
         <option value="0">Sort By Last Eidited</option>
         <option value="1">Sort By alphabatically</option>
         <option value="2">Sort By recent created</option>
@@ -27,11 +28,11 @@
     <div id="m-notes">
     <div id="showingnotes" class="viewer" onclick="viewer()">
         <h3></h3>
-    <p class="times" onclick="days(),this.value"></p>
+    <p class="times"></p>
     </div>
     </div>
     <div class="c-button">
-       <button id="create-notes" onclick="newdiv()"> Create Notes</button> 
+       <button id="create-notes" onclick="pagechanger2()"> Create Notes</button> 
     </div>
 </div>
 <div class="page" id="page-2">
@@ -54,7 +55,7 @@
         </div>
     
         <div  class="b-button">
-         <button id="add-button" onclick="goto2()" >Add Note</button>
+         <button id="add-button" onclick="pagechanger1()" >Add Note</button>
         </div>
     </section>
 </div>

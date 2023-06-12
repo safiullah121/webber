@@ -1,19 +1,23 @@
 let create = document.getElementById('create-notes');
 let page2 = document.getElementById('page-2');
 let page1 = document.getElementById('page-1');
+let notes = localStorage.getItem("notes")
+let title = document.getElementById('title');
+let dis = document.getElementById('discription');
+let id = null;
 
-function newdiv() {
-  page1.style.display = "none";
-  page2.style.display = "block";
+function pagechanger2() {
+  page1.style.display = "none"
+  page2.style.display = "block"
 }
-function goto2() {
-  page1.style.display = "block";
-  page2.style.display = "none";
+function pagechanger1() {
+  page1.style.display = "block"
+  page2.style.display = "none"
 }
 
-function newupdate() {
-  let title = document.getElementById('title');
-  let dis = document.getElementById('discription');
+function createnotes() {
+  title = document.getElementById('title');
+  dis = document.getElementById('discription');
   let myobj = {
     title: title.value,
     discription: dis.value,
@@ -24,38 +28,20 @@ function newupdate() {
   if (localStorage.getItem('notes') == null) {
     notesarr = [];
     notesarr.push(myobj);
-    localStorage.setItem("notes", JSON.stringify(notesarr));
-
   }
   else {
     notesarry = localStorage.getItem('notes');
     notesarr = JSON.parse(notesarry);
     notesarr.push(myobj);
-    localStorage.setItem("notes", JSON.stringify(notesarr));
     title.value = "",
       dis.value = ""
   }
-
-  update();
+  localStorage.setItem("notes", JSON.stringify(notesarr));
   shownotes();
 }
-
-function update() {
+function shownotes(e, element) {
   let mnotes = document.getElementById('m-notes');
-  if (localStorage.getItem('notes') == null) {
-    notesarr = [];
-    localStorage.setItem("notes", JSON.stringify(notesarr));
-
-  }
-  else {
-    notesarry = localStorage.getItem('notes');
-    notesarr = JSON.parse(notesarry);
-  }
-
-}
-function shownotes() {
-  let mnotes = document.getElementById('m-notes');
-  let notes = localStorage.getItem('notes');
+  notes = localStorage.getItem('notes');
 
   if (notes == null) {
     notesarr = [];
@@ -64,47 +50,32 @@ function shownotes() {
   }
   let str = "";
 
-  notesarr.forEach((element, index) => {
-    const viewer=document.getElementsByClassName('viewer'); 
-    const start = (new Date()/1000-element.created );
-    const minutes = Math.floor((start / 60));
-
+  notesarr.forEach((element) => {
+    let time = "";
+    const start = (new Date() / 1000 - element.created);
+    const minutes = Math.floor(start / 60);
     if (minutes < 1) {
-      str += `<div id="m-notes">
-      <div class="viewer" onclick="viewer(this,${element.id})" id=${element.id}><h3>${element.title}</h3>
-      <p class"times">Created Time: Just Now</p>
-    </div> 
-    </div> `;
+      time = "Just Now";
     } else if (minutes === 1) {
-      str += `<div id="m-notes">
-        <div class="viewer" onclick="viewer(this,${element.id})" id=${element.id}><h3>${element.title}</h3>
-        <p class"times">Created Time: 1 minute ago</p>
-      </div> 
-    </div> `;
+      time = "1 minute ago";
     } else if (minutes < 60) {
-      str += `<div id="m-notes">
-        <div class="viewer" onclick="viewer(this,${element.id})" id=${element.id}><h3>${element.title}</h3>
-        <p class"times">Created Time: ${minutes} minutes ago</p>
-      </div> 
-    </div> `;
+      time = `${minutes} minutes ago`;
     } else if (minutes < 1440) {
       const hours = Math.floor(minutes / 60);
-      str += `<div id="m-notes">
-        <div class="viewer" onclick="viewer(this,${element.id})" id=${element.id}><h3>${element.title}</h3>
-        <p class"times">Created Time: ${hours} hour ago</p>
-      </div>
-      </div>`;
+      time = `${hours} hour ago`;
     } else {
       const days = Math.floor(minutes / 1440);
-      str += `<div id="m-notes">
-        <div class="viewer" onclick="viewer(this,${element.id})" id=${element.id}><h3>${element.title}</h3>
-        <p class"times">Created Time: ${days} days ago</p>
-      </div> 
-    </div> `;
+      time = `${days} days ago`;
     }
-  });   
+
+    str += `<div id="m-notes">
+      <div class="viewer" onclick="viewer(this,${element.id})">
+        <h3>${element.title}</h3>
+        <p class"times">Created Time: ${time}</p>
+      </div> 
+    </div>`;
+  });
   mnotes.innerHTML = str;
- 
   if (notesarr.length === 0) {
     mnotes.innerHTML = "No Notes To Show!";
   }
@@ -113,27 +84,26 @@ function shownotes() {
 
 
 let add = document.getElementById('add-button');
-add.addEventListener("click", newupdate);
-update();
+add.addEventListener("click", createnotes);
 shownotes();
-function viewer(event, id) {
-  page1.style.display = "none";
-  page2.style.display = "block";
-  let notes = localStorage.getItem('notes');
-  let title = document.getElementById('title');
-  let dis = document.getElementById('discription');
+function viewer(event, parentId) {
+  id = parentId
+  pagechanger2()
+  notes = localStorage.getItem('notes');
+  title = document.getElementById('title');
+  dis = document.getElementById('discription');
   if (notes == null) {
     notesarr = [];
   } else {
     notesarr = JSON.parse(notes);
   }
- 
-  const selectedNote = notesarr.find((i)=>i.id === id);
+
+  const selectedNote = notesarr.find((i) => i.id === parentId);
   title.value = selectedNote.title;
   dis.value = selectedNote.discription;
-  localStorage.setItem("notes", JSON.stringify(notesarr));
+
   add.innerHTML = "Update Notes";
-  add.removeEventListener("click", newupdate);
+  add.removeEventListener("click", createnotes);
   add.addEventListener("click", updateNote);
 
   function updateNote() {
@@ -144,64 +114,61 @@ function viewer(event, id) {
     localStorage.setItem("notes", JSON.stringify(notesarr))
     title.value = "";
     dis.value = "";
-    page1.style.display = "block";
-    page2.style.display = "none";
+    pagechanger1()
     shownotes();
     add.innerHTML = "Add Note";
     add.removeEventListener("click", updateNote,);
-    add.addEventListener("click", newupdate);
-    location.reload()
+    add.addEventListener("click", createnotes);
   }
-  function removeNote(id) {
-   let notes=localStorage.getItem('notes')
-   notesarr=JSON.parse(notes);
-   const selectedNotes = notesarr.filter((saif)=>saif.id !== id);
-   localStorage.setItem('notes',JSON.stringify(selectedNotes))
-   page1.style.display = "block";
-   page2.style.display = "none";
-   title.value=""
-   dis.value=""
-   shownotes()
-  }
-document.getElementById('removenotes').addEventListener("click",()=>{
-
-  removeNote(id)
-})  
+  localStorage.setItem("notes", JSON.stringify(notesarr));
 }
-let search=document.getElementById('filter');
+document.getElementById('removenotes').addEventListener("click", () => {
+  removeNote(id)
+})
+function removeNote(id) {
+  notes = localStorage.getItem('notes')
+  notesarr = JSON.parse(notes);
+  const selectedNotes = notesarr.filter((saif) => saif.id !== id);
+  localStorage.setItem('notes', JSON.stringify(selectedNotes))
+  title.value = ""
+  dis.value = ""
+  pagechanger1()
+  shownotes()
+}
+
+let search = document.getElementById('filter');
 let mnotes = document.getElementById('m-notes');
-search.addEventListener("input",function(){   
-  let inputval=search.value
-  let note=document.getElementsByClassName('viewer');
-  let notes=localStorage.getItem('notes');
+search.addEventListener("input", function () {
+  let inputval = search.value
+  let note = document.getElementsByClassName('viewer');
+  notes = localStorage.getItem('notes');
   Array.from(note).forEach(function (element) {
-    let card =element.getElementsByTagName("h3")[0].innerText;
-    let note=document.getElementsByClassName('viewer');
+    let card = element.getElementsByTagName("h3")[0].innerText;
     if (card.includes(inputval)) {
-      element.style.display="block"
+      element.style.display = "block"
     }
     else {
-      element.style.display="none"
+      element.style.display = "none"
     }
   })
 })
 function sortNotes() {
   let sortValue = parseInt(sortSelect.value);
-  let notes = localStorage.getItem('notes');
+  localStorage.getItem('notes');
   console.log()
   if (notes == null) {
     return;
   }
-  
+
   let notesArr = JSON.parse(notes);
-    if (sortValue==0) {
-      notesArr.sort((a, b) => b.updated - a.updated)
-    }
-   if (sortValue==1) {
-      notesArr.sort((a, b) => a.title.localeCompare(b.title));
-   }
-  if (sortValue==2) {
-       notesArr.sort((a, b) => b.created - a.created);
+  if (sortValue == 0) {
+    notesArr.sort((a, b) => b.updated - a.updated)
+  }
+  if (sortValue == 1) {
+    notesArr.sort((a, b) => a.title.localeCompare(b.title));
+  }
+  if (sortValue == 2) {
+    notesArr.sort((a, b) => b.created - a.created);
   }
 
   localStorage.setItem('notes', JSON.stringify(notesArr));
